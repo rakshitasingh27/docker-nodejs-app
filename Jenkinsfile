@@ -8,7 +8,7 @@ pipeline {
             }
         }
         
-        stage('Build image') {
+        stage('Build & Run Image') {
             steps {
                 sh 'docker build -t nodejs/jenkins .'
             }
