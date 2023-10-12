@@ -16,7 +16,7 @@ pipeline {
         
         stage('Run Image') {    
             steps{
-                sh 'docker run -d -p 8080:8080 nodejs/jenkins'
+                sh 'docker run -d -p 8082:8082 nodejs/jenkins'
             }
         }
     }
